@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
 
-        Adapter adapter=new Adapter();
-        RecyclerView recyclerView=findViewById(R.id.recDash);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),RecyclerView.VERTICAL,false));
-        recyclerView.setAdapter(adapter);
+//        Adapter adapter=new Adapter();
+//        RecyclerView recyclerView=findViewById(R.id.recDash);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),RecyclerView.VERTICAL,false));
+//        recyclerView.setAdapter(adapter);
 
         toggle=new ActionBarDrawerToggle(this,binding.drawerLayout,R.string.open,R.string.close);
         binding.drawerLayout.addDrawerListener(toggle);

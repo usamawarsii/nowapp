@@ -24,7 +24,7 @@ public class login extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.SIButton.setOnClickListener(view -> {
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            startActivity(new Intent(getApplicationContext(),Dashboard.class));
         });
 
     }
