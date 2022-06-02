@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:id="@+id/ProfileImage"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="18dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc"
+                android:scaleType="fitXY"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_toEndOf="@id/ProfileImage"
+            android:text="Burger and Fries"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Price"
+            android:id="@+id/pri"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/ProfileImage"
+            android:layout_below="@id/name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Rs 500"
+            android:id="@+id/price"
+            android:textSize="15sp"
+            android:textColor="@color/pink"
+            android:layout_toEndOf="@id/ProfileImage"
+            android:layout_below="@id/pri"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onOff"
+            android:layout_below="@id/pri"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:shadowColor="@color/pink"
+            android:textOn="on"
+            android:textOff="off"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
